@@ -1,0 +1,86 @@
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100% repeat(3, auto);
+  grid-template-areas: 
+    'title'
+    'ourstory'
+    'ourwedding'
+    'rsvp'
+}
+
+.background {
+  background-image: url("/images/hand.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: blur(4px) contrast(0.5);
+}
+
+.title {
+  grid-area: title;
+}
+
+.ourstory {
+  grid-area: ourstory;
+  background-color: #e1efdb;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.ourwedding {
+  grid-area: ourwedding;
+  background-color: #ffdcd3;
+  padding-bottom: 2em;
+}
+
+.rsvp {
+  grid-area: rsvp;
+  background-color: rgba(255,255,255,0.8);
+}
+
+.title_text {
+  color: black;
+  font-family: 'Alex Brush';
+  font-size: 7em;
+  font-weight: 200;
+  text-align: right;
+  padding-right: 5rem;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+
+  @media (max-width: 414px) {
+    font-size: 4em;
+    margin-top: 1.5em;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 3.5em;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 3em;
+  }
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 3rem 3rem 3rem;
+}
+
+.textH1 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 6em;
+}
+
+

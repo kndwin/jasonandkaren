@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Adlery Swash';
+  src: url('./fonts/Adlery-Swash.ttf') format('truetype');
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+h1 {
+  font-family: 'Adlery Swash';
+}
+
+p {
+  font-family: 'Source Sans Pro';
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #555;
+}
